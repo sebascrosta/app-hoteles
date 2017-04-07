@@ -1,0 +1,19 @@
+{
+  "name": "app-hoteles",
+  "description": "app hoteles",
+  "main": "index.js",
+  "authors": [
+    "Sebastian Crosta <sebas.crosta@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/sebascrosta/app-hoteles",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/client/vendor",
+    "test",
+    "tests"
+  ]
+}
