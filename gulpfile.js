@@ -19,7 +19,7 @@ if (env === 'staging' || env === 'production') {
  */
 gulp.task('compile-jade', () => {
     return gulp
-        .src(`${config.appFolder }**/*.jade`)
+        .src(`${config.appFolder }**/*.pug`)
         .pipe(plugs.jade())
         .pipe(plugs.htmlmin())
         .pipe(gulp.dest(config.appFolder));
@@ -59,7 +59,7 @@ return gulp.src(`${config.build}index.html`)
         relative: true
     }))
     .pipe(gulp.dest(config.build));
-})
+});
 
 
 gulp.task('bundle',['watch'], () => {
@@ -70,7 +70,7 @@ gulp.task('bundle',['watch'], () => {
 
 
 gulp.task('watch', ()=> {
-    gulp.watch(config.files.jade, ['scripts-app']);
+    gulp.watch(config.files.pug, ['scripts-app']);
     gulp.watch(config.files.js, ['scripts-app']);
     gulp.watch(config.files.sass, ['styles-app']);
 });
