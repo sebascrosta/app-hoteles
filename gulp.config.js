@@ -1,6 +1,3 @@
-/**
- * Created by Josue on 22/11/16.
- */
 'use strict';
 
 module.exports = function () {
@@ -30,7 +27,7 @@ module.exports = function () {
         templateCache: {
             file: 'app.templates.js',
             options: {
-                module: 'result',
+                module: 'hotelsResult',
                 moduleSystem: "IIFE"
             }
         },

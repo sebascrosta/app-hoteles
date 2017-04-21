@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('result')
+        .module('hotelsResult')
         .component('hotelList',{
             bindings: {
 

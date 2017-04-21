@@ -1,21 +1,30 @@
 {
-  "name": "app-hoteles",
+  "name": "resultadohoteles",
   "version": "1.0.0",
-  "description": "app hoteles",
+  "description": "Ejercicio resultado de hoteles",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sebascrosta/app-hoteles.git"
+    "url": "git+https://github.com/SebastianGDeBin/resultadoHoteles.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sebascrosta/app-hoteles/issues"
+    "url": "https://github.com/SebastianGDeBin/resultadoHoteles/issues"
   },
-  "homepage": "https://github.com/sebascrosta/app-hoteles#readme",
+  "homepage": "https://github.com/SebastianGDeBin/resultadoHoteles#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "co-router": "^1.0.4",
+    "express": "^4.15.2",
+    "gulp-concat": "^2.6.1",
+    "mongoose": "^4.9.3",
+    "pug": "^2.0.0-beta11"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-angular-templatecache": "^2.0.0",
@@ -39,13 +48,5 @@
     "main-bower-files": "^2.13.1",
     "merge-stream": "^1.0.0",
     "stream-series": "^0.1.1"
-  },
-  "dependencies": {
-    "body-parser": "^1.17.1",
-    "co-router": "^1.0.4",
-    "express": "^4.15.2",
-    "gulp-concat": "^2.6.1",
-    "mongoose": "^4.9.3",
-    "pug": "^2.0.0-beta11"
   }
 }

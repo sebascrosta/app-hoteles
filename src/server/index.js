@@ -17,4 +17,4 @@ app.use('/',function (req, res, next) {
 
 app.listen(PORT, ()=>{
     console.log("Server running on " + PORT);
-})
+});

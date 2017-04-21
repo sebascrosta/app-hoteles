@@ -1,1 +1,7 @@
-angular.module()
+(function(){
+    'use strict';
+
+    angular
+        .module('slider', []);
+
+})();
