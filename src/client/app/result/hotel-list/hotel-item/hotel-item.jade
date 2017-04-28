@@ -1,0 +1,22 @@
+div.hotel-item
+    section.hotel-images
+        slider(items="$ctrl.hotel.images")
+
+    section.hotel-room-data
+        p.hotel-name {{$ctrl.hotel.name}}
+        span.hotel-stars(ng-repeat=("star in $ctrl.stars() track by $index"))
+            <i class="fa fa-star" aria-hidden="true"></i>
+        p.hotel-room <i class="fa fa-bed" aria-hidden="true"></i> Solo la habitación
+        span.icon(ng-repeat = "(key,value) in $ctrl.hotel.amenities" ng-class ="$ctrl.getIcon(key)")
+
+    section.hotel-price-data
+        p Precio por noche por habitación
+        p.price
+            span.ars ARS
+            span {{$ctrl.hotel.price}}
+        p Impuestos y tasas no incluidas
+
+        button#hotel-ver-btn(type=button) Ver Hotel
+
+        p Pagá en cuotas
+        a(href='') Pagá en destino

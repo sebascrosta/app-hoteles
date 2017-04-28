@@ -16,13 +16,15 @@
                 return Array(parseInt(this.hotel.stars))
             }
 
-            this.getIcon(key){
-                    var icons = {
-                wifi: "class amt-internet",
-                sp: "class amt-spa",
-                tel: "class amt-phone",
-                pl: "class amt-pool"
-            }
+            this.getIcon = function (key){
+                var icons = {
+                    wifi: "class amt-internet",
+                    sp: "class amt-spa",
+                    tel: "class amt-phone",
+                    pl: "class amt-pool"
+                }
+
+                console.log(icons[key]);
             return icons[key];
             }
         }

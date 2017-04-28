@@ -2,8 +2,8 @@
     angular
         .module('hotelsResult')
         .component('hotelsResultRoot',{
-            controller: HotelsResultController,
-           templateUrl:'result/hotel-results-root.html'
+            controller: HotelResultController,
+           templateUrl:'result/hotels-result.html'
         });
     HotelResultController.$inject = ['HotelResultService'];
 
@@ -13,8 +13,8 @@
 
         this.$onInit = function(){
             _self.hotels = HotelResultService.getHotels();
+            return _self.hotels;
         };
-
     }
 
 })();

@@ -8,7 +8,6 @@
     HotelResultService.$inject = ['$http'];
 
     function HotelResultService($http){
-
         this.listHotel = [
             {
                 "_id":{"$oid":"58cb47efe3dcd6c694f67533"},
@@ -118,17 +117,10 @@
                     "sp": "Spa"}
             }
             ];
-
         this.getHotels = function() {
             return this.listHotel;
         }
 
-        this.getIcon = function(key){
-            var icons = {
-                sp:amt-spa
-            }
-             return icons;
-        }
     }
 
 })();

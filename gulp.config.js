@@ -3,7 +3,7 @@
 module.exports = function () {
     const pkg = require('./package.json');
 
-    const server = './server/';
+    const server = './src/server/';
     const src = './src/';
     const scssfolder = `${src }client/scss/`;
     const mainscss = `${scssfolder }styles.scss`;
@@ -37,9 +37,7 @@ module.exports = function () {
             js: [`${src}**/*.js`, `!${src}**/*.templates.js`],
             html: `${src}**/*.html`,
             jade: `${src}**/*.jade`
-
         }
     };
-
     return config;
 };

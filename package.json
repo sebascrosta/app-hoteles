@@ -1,7 +1,7 @@
 {
-  "name": "resultadohoteles",
+  "name": "app-hoteles",
   "version": "1.0.0",
-  "description": "Ejercicio resultado de hoteles",
+  "description": "Resultado de hoteles",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SebastianGDeBin/resultadoHoteles.git"
+    "url": "git+https://github.com/sebascrosta/app-hoteles.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SebastianGDeBin/resultadoHoteles/issues"
+    "url": "https://github.com/sebascrosta/app-hoteles/issues"
   },
-  "homepage": "https://github.com/SebastianGDeBin/resultadoHoteles#readme",
+  "homepage": "https://github.com/sebascrosta/app-hoteles#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
     "co-router": "^1.0.4",
