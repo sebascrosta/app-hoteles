@@ -80,6 +80,12 @@ gulp.task('watch', ()=> {
     gulp.watch(config.files.html), ['scripts-app'];
 });
 
+gulp.task('font', ()=> {
+    return gulp
+        .src(`${config.font }`)
+        .pipe(gulp.dest(config.build));
+});
+
 /** Manda el index a build?*/
 
 gulp.task('bundle', ['watch'], () => {
@@ -107,7 +113,7 @@ return gulp.src(`${config.build}index.html`)
     .pipe(gulp.dest(config.build));
 });
 
-gulp.task('build', ['styles-app', 'scripts-lib', 'scripts-app']);
+gulp.task('build', ['styles-app', 'scripts-lib', 'scripts-app', 'font']);
 
 
 gulp.task('nodemon', () => {

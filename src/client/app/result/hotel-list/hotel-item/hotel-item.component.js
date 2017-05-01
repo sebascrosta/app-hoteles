@@ -23,8 +23,6 @@
                     tel: "class amt-phone",
                     pl: "class amt-pool"
                 }
-
-                console.log(icons[key]);
             return icons[key];
             }
         }

@@ -10,6 +10,7 @@ module.exports = function () {
     const build = './build/';
     const appFolder = `${src}client/app/`;
     const index = `${src }client/index.html`;
+    const font = `${src }client/scss/am-amenities.ttf`;
 
     const config = {
         projectName: pkg.name,
@@ -21,6 +22,7 @@ module.exports = function () {
         build,
         index,
         src,
+        font,
         images: `${src }client/images/`,
         fonts: `${scssfolder }fonts/`,
         vendorfolder: `${src }client/vendor/`,

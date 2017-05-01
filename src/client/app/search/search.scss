@@ -1,0 +1,27 @@
+.search-container{
+    background-color: #F4F4F4;
+    border-style: ridge;
+    margin: 20px;
+    height: 90px;
+}
+
+.search-title{
+    font-size: 20px;
+    line-height:24px;
+    font-weight: normal;
+    margin: 12px 0 7px 25px;
+    padding-left:0px;
+}
+
+.search-content{
+    display: inline;
+    list-style: none;
+    -webkit-padding-start: 10px;
+
+    li{
+      list-style: none;
+      display: inline;
+      margin-bottom: 12px;
+      margin-left: 16px;
+  }
+}
