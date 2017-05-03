@@ -5,6 +5,7 @@
         .module('hotelsResult')
         .component('hotelItem',{
             controller: HotelItemController,
+            controllerAs: '$ctrl',
             bindings: {
                 hotel: '<'
             },

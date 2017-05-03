@@ -21,6 +21,7 @@ module.exports = function () {
         angularRootApp: `${appFolder}core/`,
         build,
         index,
+        server,
         src,
         font,
         images: `${src }client/images/`,

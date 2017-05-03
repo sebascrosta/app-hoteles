@@ -119,11 +119,15 @@ gulp.task('build', ['styles-app', 'scripts-lib', 'scripts-app', 'font']);
 gulp.task('nodemon', () => {
     plugs.nodemon({
     script: './src/server/index.js',
+    nodeArgs: [`--inspect`],
     ext: 'js html',
     env: {
-        'DEBUG' : 'template:server'
-        ,'NODE_ENV' : 'development'
-    }
+        'DEBUG' : 'app:server',
+        'NODE_ENV' : 'development'
+    },
+    ignore: [
+        config.build,
+    ],
 })
     .on('restart', function () {
         console.log('server restarted!')
