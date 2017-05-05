@@ -7,7 +7,7 @@
             'slider',
             'search',
             'breadcrumb',
-            'filter'
+            'filterList'
         ]);
 
 })();

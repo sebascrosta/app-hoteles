@@ -12,7 +12,7 @@
         this.getHotels = getHotels;
 
         function getHotels() {
-            console.log('Service del Client. ACA SI')
+            console.log('Acá debería devolver el GET')
             return $http.get('/api/hotels')
                 .then(function (response) {
                     return response.data;

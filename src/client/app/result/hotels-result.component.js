@@ -13,7 +13,6 @@
         var _self = this;
 
         this.$onInit = function(){
-            console.log('Entra al onInit')
             HotelResultService.getHotels()
                 .then(function success(response) {
                     _self.hotels = response;
