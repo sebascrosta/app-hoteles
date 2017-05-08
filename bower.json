@@ -15,5 +15,8 @@
     "src/client/vendor",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angularjs-slider": "^6.1.1"
+  }
 }

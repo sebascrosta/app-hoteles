@@ -5,10 +5,11 @@
 @import "../app/slider/slider.scss";
 @import "../app/search/search.scss";
 @import "../app/breadcrumb/breadcrumb.scss";
-@import "../app/filter/filter-list.scss";
-@import "../app/filter/filter-name/filter-name.scss";
-@import "../app/filter/filter-price/filter-price.scss";
-@import "../app/filter/filter-price/filter-price.scss";
+@import "../app/result/filter/filter-list.scss";
+@import "../app/result/filter/filter-name/filter-name.scss";
+@import "../app/result/filter/filter-price/filter-price.scss";
+@import "../app/result/filter/filter-stars/filter-stars.scss";
+@import '../vendor/angularjs-slider/dist/rzslider.scss';
 
 body, html{
   background-color: #F4F4F4;

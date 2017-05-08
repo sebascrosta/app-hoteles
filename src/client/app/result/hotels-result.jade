@@ -6,6 +6,6 @@ main.row
             search
     div.row
         section.filter-ctn.col-xs-12.col-sm-12.col-md-3
-            filter-list
+            filter-list(filters='$ctrl.filters')
         section.hotel-ctn.col-xs-12.col-sm-12.col-md-9
-            hotel-list(hotels='$ctrl.hotels')
+            hotel-list(hotels='$ctrl.hotels' filters='$ctrl.filters')

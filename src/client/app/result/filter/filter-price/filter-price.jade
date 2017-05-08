@@ -1,0 +1,7 @@
+div.filter-container
+    p.filter-title(ng-click="collapse =! collapse") <i class="fa fa-search" aria-hidden="true"></i> Precio por noche <i class="fa fa-sort-asc" aria-hidden="true"></i>
+
+    div.filter-container(ng-show="!collapse")
+        rzslider(rz-slider-model='$ctrl.filters.price.minPrice',
+                 rz-slider-high='$ctrl.filters.price.maxPrice',
+                 rz-slider-options='$ctrl.sliderOptions.options')

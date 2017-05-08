@@ -1,0 +1,15 @@
+div.filter-container
+    p.filter-title(ng-click="collapse =! collapse") <i class="fa fa-star" aria-hidden="true"></i> Estrellas <i class="fa fa-sort-asc" aria-hidden="true"></i>
+
+    div.filter-container(ng-show="!collapse")
+        //input.check-stars(type='checkbox' ng-model="selectedAll" ng-click="$ctrl.allStars()")
+        //label.stars-container Todas las estrellas
+            span.number-hotels ({{$ctrl.filters.numberHotels[0]}})
+
+
+        div.check-ctn(ng-repeat=("star in $ctrl.filters.numberStars | orderBy:'number':true "))
+            input.check-stars(type='checkbox' ng-click="$ctrl.filterByStars(star)")
+            label.stars-container
+                span.star(ng-repeat=("star in $ctrl.numberStars(star) track by $index"))
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                span.number-hotels ({{$ctrl.filters.numberHotels[star]}})

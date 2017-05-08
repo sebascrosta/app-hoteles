@@ -52,14 +52,14 @@
   position: absolute;
   z-index: 1;
   top: calc(50% - 12px);
-  background-color: rgba(0,0,0,0);
+  background-color: white;
   border-radius: 50%;
   color: #157ab1;
   font-size: 18px;
   left: 8px;
   font-weight:bold;
   &:hover {
-    background-color: white;
+    background-color: #cccccc;
     color: #258ac1;
   }
 }
@@ -71,11 +71,11 @@
   z-index: 1;
   color: #157ab1;
   top: calc(50% - 12px);
-  background-color: rgba(0,0,0,0);
+  background-color: white;
   border-radius: 50%;
   font-size: 18px;
   &:hover {
-    background-color: white;
+    background-color: #CCC;
     color: #258ac1;
   }
 }

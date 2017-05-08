@@ -1,1 +1,1 @@
-<ul class="hotel-list"><li ng-repeat="hotel in $ctrl.hotels track by $index"><hotel-item hotel="hotel"></hotel-item></li></ul>
+<ul class="hotel-list"><li ng-repeat="hotel in $ctrl.hotels | filterName:($ctrl.filters.customName) | filterStars:($ctrl.filters.stars) | filterPrice:($ctrl.filters.price) track by $index"><hotel-item hotel="hotel"></hotel-item></li></ul>

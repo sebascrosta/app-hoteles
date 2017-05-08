@@ -1,0 +1,31 @@
+ .filter-container{
+   .rzslider {
+     .rz-pointer {
+       background-color: white;
+       border: 1px solid #777;
+       width:  16px;
+       height: 32px;
+       content: "";
+     }
+     .rz-pointer-min::after{
+       display: none;
+     }
+     .rz-pointer-max::after{
+       display: none;
+     }
+     .rz-limit{
+       display: none;
+     }
+     .rz-bar{
+       height: 8px;
+       background-color: #777;
+       margin-top: -4px;
+     }
+     .rz-selection{
+       background: gray;
+     }
+     .rz-bubble.rz-limit {
+       color: snow;
+     }
+   }
+ }

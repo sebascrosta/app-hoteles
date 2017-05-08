@@ -5,7 +5,8 @@
         .module('hotelsResult')
         .component('hotelList',{
             bindings: {
-                hotels:'<'
+                hotels:'<',
+                filters:'<'
             },
             templateUrl:"result/hotel-list/hotel-list.html"
         });

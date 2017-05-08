@@ -11,11 +11,13 @@
     function HotelResultController(HotelResultService){
 
         var _self = this;
+        _self.hotels = []
 
         this.$onInit = function(){
             HotelResultService.getHotels()
                 .then(function success(response) {
-                    _self.hotels = response;
+                    _self.hotels = response.listHotel;
+                    _self.filters = response.filters;
                 }, function error(error) {
                     console.log(error);
                 });

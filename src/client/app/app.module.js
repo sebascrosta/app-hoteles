@@ -7,7 +7,8 @@
             'slider',
             'search',
             'breadcrumb',
-            'filterList'
+            'filterList',
+            'rzModule'
         ]);
 
 })();
