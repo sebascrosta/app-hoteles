@@ -1,7 +1,7 @@
-div.filter-container
+.filter-container
 
-    p.filter-title(ng-click="collapse =! collapse") <i class="fa fa-search" aria-hidden="true"></i> Nombre de hotel <i class="fa fa-sort-asc" aria-hidden="true"></i>
+    p.filter-title(ng-click="collapseName =! collapseName") <i class="fa fa-search" aria-hidden="true"></i> Nombre de hotel <i class="fa fa-sort-asc" aria-hidden="true"></i>
 
-    div.filter-content(ng-show="!collapse")
+    .filter-content(ng-show="!collapseName")
         input.filter-name-input(data-ng-model="$ctrl.filters.defaultName" placeholder="Ingrese el nombre del hotel")
         button.filter-name-btn(ng-click="$ctrl.filterByName()" type='button') Aceptar

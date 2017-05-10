@@ -17,6 +17,7 @@
 
         this.clearFilters = function () {
             self.hotelsResultController.$onInit();
+
         }
 
     }

@@ -17,7 +17,7 @@
         return function (hotels,stars) {
             return hotels.filter(function (hotel) {
                 if(stars.length == 0){
-                    return true
+                    return true;
                 }else{
                     return stars.indexOf(hotel.stars)>-1;
                 }
@@ -35,6 +35,11 @@
         };
 
         this.allStars = function () {
+            self.filters.stars = [];
+
+            for(var i = 1; i < self.filters.starValue.length ; i++){
+                self.filters.starValue[i] = false;
+            }
         };
 
         this.filterByStars = function (star) {
@@ -43,6 +48,8 @@
             }else{
                 self.filters.stars.push(star);
             }
+
+            self.filters.starValue[0] = false;
         };
     }
 

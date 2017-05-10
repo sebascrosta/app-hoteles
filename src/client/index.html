@@ -11,6 +11,10 @@
     <!-- App.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.3/angular.js"></script>
     <script src="/static/app-hoteles.js"></script>
+
+    <link rel="stylesheet" href="http://static.almundo.com/dist/almundo-statics.css">
+    <script src="http://static.almundo.com/dist/almundo-statics.js"></script>
+
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -20,9 +24,12 @@
 </head>
 
 <body ng-app="app">
-    <div>
-        <hotels-result-root class="container-fluid"></hotels-result-root>
-    </div>
+    <am-header channel="web" country="arg" brand="almundo"></am-header>
+
+    <hotels-result-root class="container-fluid"></hotels-result-root>
+
+    <am-footer channel="web" country="arg" brand="almundo"></am-footer>
+
 
 <!-- inject:js -->
 <!-- endinject -->

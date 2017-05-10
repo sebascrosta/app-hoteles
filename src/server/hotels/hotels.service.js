@@ -120,6 +120,7 @@ class HotelsService {
                 "minPrice" : 0,
                 "maxPrice": 3500,
             },
+            "starValue": [true, false, false, false, false, false],
             "numberStars": ["1","2","3","4","5"],
             "stars":[],
             "numberHotels": ["7","1","1","2","2","1"]
