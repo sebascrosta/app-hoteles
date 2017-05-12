@@ -40,6 +40,8 @@
             for(var i = 1; i < self.filters.starValue.length ; i++){
                 self.filters.starValue[i] = false;
             }
+
+            self.filters.starValue[0] = true;
         };
 
         this.filterByStars = function (star) {
@@ -50,6 +52,14 @@
             }
 
             self.filters.starValue[0] = false;
+
+            if (self.filters.starValue[1] &&
+                self.filters.starValue[2] &&
+                self.filters.starValue[3] &&
+                self.filters.starValue[4] &&
+                self.filters.starValue[5])
+
+                self.allStars();
         };
     }
 
