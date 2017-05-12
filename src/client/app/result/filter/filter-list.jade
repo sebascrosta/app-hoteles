@@ -1,5 +1,10 @@
-div.filter-list-container
-    div.filters-title Filtrar
+.filter-list-container
+
+    .filter-container
+        img.image(src="/static/mapa-hoteles.png" class="img-responsive")
+        p.filter-title.center Ver hoteles en mapa
+
+    .filters-title Filtrar
         span.clear-filters(ng-click="$ctrl.clearFilters()") <i class="fa fa-times" aria-hidden="true"></i> Eliminar filtros
     filter-name(filters = '$ctrl.filters')
     filter-price(filters = '$ctrl.filters')

@@ -19,8 +19,7 @@
   font-size: large;
   color: #444444;
   font-weight: bold;
-  margin-left:4px;
-  margin-bottom:4px;
+  margin: 10px 0 10px 4px;
 }
 
 .filter-title {
@@ -38,4 +37,13 @@
   float: right;
 }
 
-
+.center{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  vertical-align: center;
+}
+.image{
+  display: block;
+  margin:auto;
+}
