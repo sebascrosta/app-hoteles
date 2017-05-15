@@ -7,9 +7,6 @@
             controllerAs:"$ctrl",
             bindings: {
                 filters: '<'
-            },
-            require: {
-                hotelsResultController: '^hotelsResultRoot'
             }
         }).filter('filterPrice', function () {
 

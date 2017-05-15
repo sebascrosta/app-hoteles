@@ -6,9 +6,6 @@
         .component('filterStars',{
             controller: filterStarsController,
             templateUrl:"result/filter/filter-stars/filter-stars.html",
-            require: {
-                hotelsResultController: '^hotelsResultRoot'
-            },
             bindings: {
                 filters:'<'
             }

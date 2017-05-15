@@ -1,4 +1,5 @@
 @import "./font.scss";
+@import '../vendor/angularjs-slider/dist/rzslider.scss';
 @import "./variables.scss";
 @import "./_mixins.scss";
 @import "../app/result/hotels-result.scss";
@@ -11,7 +12,6 @@
 @import "../app/result/filter/filter-name/filter-name.scss";
 @import "../app/result/filter/filter-price/filter-price.scss";
 @import "../app/result/filter/filter-stars/filter-stars.scss";
-@import '../vendor/angularjs-slider/dist/rzslider.scss';
 
 
 body, html{
